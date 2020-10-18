@@ -5,21 +5,34 @@ var incorrectGuesses;
 
 $(function(){
   //Upon hitting the start game button, the first elements are hidden and game elements are shown
-  $("#start-screen button").on("click", function (event) {
-    $("#start-screen").hide();
-    $("#game-screen").show();
-    $("#guess").val("");
-    incorrectGuesses = 0;
-    total = 0;
-    rollAllowed = true;
-  });
+  $("#start-screen button").click(resetGame);
 
   //when you click the roll button it rolls the die and updates your addition problem
   $("#roll-button").click(rollDice);
 
   //when you click the add button it calls the checkGuess function
   $("#addition-button").click(checkGuess);
+
+  $("#reset-button").click(resetGame);
+
+  $("#end-button").click(function(){
+    $("#start-screen").show();
+    $("#game-screen").hide();
+    $("#end-screen").hide();
+  });
 });
+
+//reset all values for the game to start again
+function resetGame(){
+  $("#start-screen").hide();
+  $("#game-screen").show();
+  $("#end-screen").hide();
+  $("#guess").val("");
+  $("#addition-sentence").text("");
+  incorrectGuesses = 0;
+  total = 0;
+  rollAllowed = true;
+}
 
 //Handle the event click of the roll button and update on screen elements
 function rollDice(){
@@ -65,26 +78,32 @@ function checkGuess(){
     }else{
       $("#announcements").text("You guessed incorrectly! Try again.");
       incorrectGuesses++;
-      if(incorrectGuesses == 3)[
-        loseGame("guesses");
-      ]
+      if(incorrectGuesses == 3){
+        endGame("guesses");
+      }
     }
   }else{
     $("#announcements").text("Roll the dice before you guess again.");
   }
 }
 
-loseGame(typeOfLoss){
+function endGame(typeOfLoss){
+  $("#game-screen").hide();
+  $("#end-screen").show();
   switch(typeOfLoss) {
     case "guesses":
-//lost to too many guesses
-    [break]
+      $("#end-title").text("You Lost");
+      $("#end-description").text("You added your numbers incorrectly too many times");
+      break;
+
     case "adaWon":
 //need to figure this out
-    [break]
-    default:
-//what would make this happen?
-    [break]
+      break;
+
+    case "win":
+      $("#end-title").text("You Won");
+      $("#end-description").text("Congratulations");
+      break;
   }
 }
 
