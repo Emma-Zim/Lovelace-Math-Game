@@ -12,7 +12,7 @@ var userGuessing;
 
 $(function(){
   //Upon hitting the start game button, the first elements are hidden and game elements are shown
-  $("#start-screen button").click(resetGame);
+  $("#start-button").click(resetGame);
 
   //when you click the roll button it rolls the die and updates your addition problem
   $("#roll-button").click(rollDice);
