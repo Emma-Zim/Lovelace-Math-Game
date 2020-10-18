@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <title>Add the Dice</title>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="game.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+
+  <body>
+    <div id="start-screen">
+      <h1>Instructions</h1>
+      <p>Roll the die and add your number to your previous rolls. To win keep
+        number under 21 but higher than the computer who will also roll. Good
+        luck!</p>
+      <button id="start-button">Start the Game</button>
+    </div>
+
+    <div id="game-screen" style="display:none">
+      <h1 id="user-score"></h1>
+      <button id="roll-button">Roll your dice</button>
+      <button id="stop-button">Stop rolling</button>
+      <div id="addition-screen">
+        <p id="addition-sentence"></p>
+        <div id="input-section">
+          <p>Enter your guess for the addition</p>
+          <input type="text" id="guess">
+          <button id="addition-button">Add to total</button>
+        </div>
+      </div>
+      <p id="announcements"></p>
+    </div>
+
+    <div id="ada-screen">
+      <h1 id="ada-score"><h1>
+      <h3 id="ada-description"><h3>
+    </div>
+
+    <div id="end-screen" style="display:none">
+      <h1 id="end-title"></h1>
+      <h3 id="end-description"></h3>
+      <button id="reset-button">Play Again</button>
+      <button id="end-button">End Game</button>
+    </div>
+  </body>
+</html>
