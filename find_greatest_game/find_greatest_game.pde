@@ -84,7 +84,7 @@ void mouseReleased(){
           textSize(30);
           text("YOU HAVE FAILED",120, 300);
           text("GOOD LUCK NEXT TIME!",90,330 );
-          stop();
+          exit();
         }
         
     }
