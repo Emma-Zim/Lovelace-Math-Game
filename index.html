@@ -12,15 +12,20 @@
       <p>Roll the die and add your number to your previous rolls. To win keep
         number under 21 but higher than the computer who will also roll. Good
         luck!</p>
-      <button id="start">Start the Game</button>
+      <button id="start-button">Start the Game</button>
     </div>
 
-    <div id="game-screen">
-      <button id="roll button">Roll your die</button>
-      <div>
+    <div id="game-screen" style="display:none">
+      <button id="roll-button">Roll your dice</button>
+      <div id="addition-screen">
         <p id="addition-sentence"></p>
-        <input type="text" id="guess">
+        <div id="input-section">
+          <p>Enter your guess for the addition</p>
+          <input type="text" id="guess">
+          <button id="addition-button">Add to total</button>
+        </div>
       </div>
+      <p id="announcements"></p>
     </div>
 
 
