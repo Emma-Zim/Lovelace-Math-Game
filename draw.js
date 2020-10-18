@@ -1,6 +1,7 @@
 function generateBoard(context, width, height){
+  context.fillStyle = "black";
   var numBlocks = 20;
-  var blockWidth = (width/numBlocks - 20);
+  var blockWidth = width/numBlocks - 20;
   var blockHeight = height/numBlocks - 15;
 
   var xText = 280;

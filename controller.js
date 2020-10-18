@@ -17,7 +17,7 @@ function generateSolutions(numSolutions, context) {
   for(var i = 0; i < numSolutions; i++){
     solutionArray[i] = new Array(2);
     solutionArray[i][0] = firstArray[i][0] + secondArray[i][0];
-    solutionArray[i][1] = secondArray[i][1] + secondArray[i][1]
+    solutionArray[i][1] = firstArray[i][1] + secondArray[i][1]
   }
 
   // display the two arrays
@@ -42,10 +42,20 @@ function generateSolutions(numSolutions, context) {
   context.fillText("]", x + 80, y + 70 - 30*numSolutions);
   context.fillText("]", x + 80, y + 470 - 30*numSolutions);
 
-  return solutionArray;
+  return {
+    sol: solutionArray,
+    first: firstArray,
+    second: secondArray
+  };
 }
 
 function checkSolution(solArray, x, y){
+  // need to constrain the x to get the block number
+  x = Math.ceil((x - 270)/(5 + (1280/20 - 20)));
+  //console.log(x);
+  y = Math.ceil((y - 60)/(8 + (800/20 - 15)));
+  //console.log(y);
+
   for(var i = 0; i < solArray.length; i++){
     if(x == solArray[i][0] && y == solArray[i][1]){
       // it is correct
