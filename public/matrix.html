@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Matrix Addition Game</title>
+      <style>
+        * { padding: 0; margin: 0; }
+        canvas { background: #eee; display: block; margin: 0 auto; }
+      </style>
+      <script src="controller.js"></script>
+      <script src="draw.js"></script>
+  </head>
+  <body>
+    <a href="index.html">Back</a>
+    <canvas id="gameCanvas" width="1280" height="800"></canvas>
+    <script>
+      var level = 1;
+      var correctAnswers = 0;
+      var canvas = document.getElementById("gameCanvas");
+      var ctx = canvas.getContext("2d");
+      generateBoard(ctx, 1280, 860)
+
+      var arrays = generateSolutions(level, ctx);
+      console.log(arrays.sol);
+
+      function getMousePos(canvas, evt) {
+        var rect = canvas.getBoundingClientRect();
+        return {
+          x: evt.clientX - rect.left,
+          y: evt.clientY - rect.top
+        };
+      }
+
+      canvas.addEventListener('mouseup', function(evt) {
+        var mousePos = getMousePos(canvas, evt);
+        console.log(mousePos);
+        if(checkSolution(arrays.sol, mousePos.x, mousePos.y)){
+          var xBlock = Math.ceil((mousePos.x - 270)/(5 + (1280/20 - 20)));
+          var yBlock = Math.ceil((mousePos.y - 60)/(8 + (800/20 - 15)));
+
+          ctx.beginPath();
+          ctx.rect((xBlock-1)*(5 + (1280/20 - 20)) + 270, (yBlock-1)*(8 + (800/20 - 15)) + 60, (1280/20 - 20), (800/20 - 15));
+          ctx.fillStyle = "blue";
+          ctx.fill();
+          ctx.stroke();
+
+          correctAnswers += 1;
+          if(correctAnswers == level){
+            level += 1;
+            correctAnswers = 0;
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            generateBoard(ctx, 1280, 860)
+            arrays = generateSolutions(level, ctx);
+          }
+        }
+        else{
+          var xBlock = Math.ceil((mousePos.x - 270)/(5 + (1280/20 - 20)));
+          var yBlock = Math.ceil((mousePos.y - 60)/(8 + (800/20 - 15)));
+
+          ctx.beginPath();
+          ctx.rect((xBlock - 1)*(5 + (1280/20 - 20)) + 270, (yBlock-1)*(8 + (800/20 - 15)) + 60, (1280/20 - 20), (800/20 - 15));
+          ctx.fillStyle = "red";
+          ctx.fill();
+          ctx.stroke();
+        }
+      });
+    </script>
+  </body>
+</html>
