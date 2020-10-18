@@ -12,7 +12,7 @@ chooses a number that is not the smallest.
 
 */
 
-String Welcome = "Welcome to my Math game.";
+String Welcome = "Math game by Lovelace";
 String how_to_play = "Find the smallest number.";
 
 int counter = 0;
@@ -39,8 +39,9 @@ void setup(){
  
 //changes the values of the arr[i] from zero to random values that are not duplicate
  int j = 0, a;
+ int n = int(random(16,500));
  while (goodArray != true){
-   a = int(random(1,200));
+   a = int(random(1,n));
    if(j>=16){
     break;
    }
@@ -111,7 +112,7 @@ else {
 fill(255,255,0);
 //introduction message
 textSize(20);
-text(Welcome, 110,20);
+text(Welcome, 135,20);
 text(how_to_play, 120,40);
 
 
@@ -134,8 +135,9 @@ if (passedTime >= totalTime) {
     
   //updates the current array with new randome numbers
   int j = 0, a;
+  int n = int(random(16,500));
     while (goodArray != true){
-      a = int(random(1,200));
+      a = int(random(1,n));
       if(j>=16){
         break;
       }

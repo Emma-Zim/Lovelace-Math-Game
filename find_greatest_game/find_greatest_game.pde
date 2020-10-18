@@ -12,8 +12,8 @@ chooses a number that is not the smallest.
 
 */
 
-String Welcome = "Welcome to my Math game.";
-String how_to_play = "Find the smallest number.";
+String Welcome = "Math game by Lovelace";
+String how_to_play = "Find the GREATEST number.";
 
 int counter = 0;
 int box_xpos = 70;
@@ -39,8 +39,9 @@ void setup(){
  
 //changes the values of the arr[i] from zero to random values that are not duplicate
  int j = 0, a;
+ int n = int(random(32,500));
  while (goodArray != true){
-   a = int(random(1,200));
+   a = int(random(1,n));
    if(j>=16){
     break;
    }
@@ -111,7 +112,7 @@ else {
 fill(255,255,0);
 //introduction message
 textSize(20);
-text(Welcome, 110,20);
+text(Welcome, 135,20);
 text(how_to_play, 120,40);
 
 
@@ -134,8 +135,9 @@ if (passedTime >= totalTime) {
     
   //updates the current array with new randome numbers
   int j = 0, a;
+  int n = int(random(16,500));
     while (goodArray != true){
-      a = int(random(1,200));
+      a = int(random(1,n));
       if(j>=16){
         break;
       }
@@ -151,11 +153,11 @@ if (passedTime >= totalTime) {
   
 
 for (int i = 0; i < boxes.length; i++) { 
-  if(boxes[i].n == find_smallest(arr)){
-     println("smallest  == ", find_smallest(arr));
+  if(boxes[i].n == find_greatest(arr)){
+     println("smallest  == ", find_greatest(arr));
      
     }
-    else if(boxes[i].n == find_smallest(arr)){
+    else if(boxes[i].n == find_greatest(arr)){
     background(0);
     }
     boxes[i].display();
@@ -163,10 +165,10 @@ for (int i = 0; i < boxes.length; i++) {
     
   }
 }
-//finds the smallest intiger from the array
-int find_smallest(int[] array){
+//finds the greatest intiger from the array
+int find_greatest(int[] array){
   int[] a = sort(array);
-  return a[0];
+  return a[15];
    
 }
 //searches the array to find a duplicate number
@@ -200,7 +202,7 @@ class Box {
  void check(){
   if(mousePressed){
    if(mouseX >= xpos && mouseX <=xpos+w &&  mouseY >= ypos && mouseY <=ypos+h){
-     if(find_smallest(arr) == n){
+     if(find_greatest(arr) == n){
        box_color = color(0,255,0);
      }
      else {
