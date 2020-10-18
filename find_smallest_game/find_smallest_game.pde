@@ -1,14 +1,12 @@
 /* 
 Developer: Bosena Telila
-Team: lovelace  r
+Team: lovelace
 date: 10/17/20
 
-This code creates a array of  random numbers/intigers
-and places them in each box. If the player clicks on the box with the smalles integer
-the array resets and the places finds the smallest number again. The counter keeps going until the places 
+This code creates an array of  random intigers and
+places each random interger inside a box. If the player clicks on the box with the smallest integer the box turns green.
+if the player clicks on the box that is not the smallest integer the box turns blue and game over.The counter keeps going until the player 
 chooses a number that is not the smallest.
-
-
 
 */
 
