@@ -1,4 +1,4 @@
-##Lovelace Math Games
+Lovelace Math Game
 Learn math from the Enchantress of Numbers herself!
 
 These games were created for the Girls Hoo Hack Hackathon.
