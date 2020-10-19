@@ -28,18 +28,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a2191d7f-e13d-4e00-b291-b0401ff73bfd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/additiongame/addition.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/addition.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/additiongame/game.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/game.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/additiongame/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/find_greatest_game/find_greatest_game.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/find_greatest_game.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/find_greatest_game/find_greatest_game.pde" beforeDir="false" afterPath="$PROJECT_DIR$/public/find_greatest_game.pde" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/find_greatest_game/processing.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/processing.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/find_smallest_game/find_smallest_game.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/find_smallest_game.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/find_smallest_game/find_smallest_game.pde" beforeDir="false" afterPath="$PROJECT_DIR$/public/find_smallest_game.pde" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrixGame/controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrixGame/draw.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/draw.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrixGame/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/matrixGame/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/procfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,16 +48,22 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="12.18.3" />
     <property name="javascript.nodejs.core.library.typings.version" value="12.12.68" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public" />
     </key>
@@ -87,7 +83,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1603062797166</updated>
-      <workItem from="1603062798672" duration="957000" />
+      <workItem from="1603062798672" duration="2356000" />
     </task>
     <servers />
   </component>
