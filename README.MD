@@ -11,4 +11,4 @@ We hope that these math games encourage students to study math!
 
 There are four games created: a Blackjack addition game, a matrix addition game, a find largest number, and find smallest number game.
 
-These games run in our web browser (Chrome is the only browser we have tested it on) and they require JavaScript so please make sure that in installed and running in your browser!
+These games run in our web browser (https://powerful-forest-37859.herokuapp.com/index.html) and they require JavaScript so please make sure that in installed and running in your browser!
