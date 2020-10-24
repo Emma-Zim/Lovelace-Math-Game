@@ -28,8 +28,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a2191d7f-e13d-4e00-b291-b0401ff73bfd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/procfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/find_greatest_game.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/find_greatest_game.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/find_greatest_game.pde" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/find_smallest_game.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/find_smallest_game.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/find_smallest_game.pde" beforeDir="false" afterPath="$PROJECT_DIR$/public/games/find_smallest_game.pde" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,17 +64,18 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/games" />
+      <recent name="$PROJECT_DIR$/public" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public" />
-    </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
   </component>
@@ -83,7 +87,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1603062797166</updated>
-      <workItem from="1603062798672" duration="2356000" />
+      <workItem from="1603062798672" duration="3491000" />
+      <workItem from="1603519248011" duration="739000" />
     </task>
     <servers />
   </component>
@@ -100,5 +105,36 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="821" height="212" key="GridCell.Tab.0.bottom" timestamp="1603519960313">
+      <screen x="-1920" y="23" width="1920" height="1057" />
+    </state>
+    <state width="821" height="212" key="GridCell.Tab.0.bottom/0.0.1440.849/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1603519351699" />
+    <state width="821" height="212" key="GridCell.Tab.0.bottom/0.23.1440.825/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1603519960313" />
+    <state width="1108" height="212" key="GridCell.Tab.0.bottom/0.23.1440.829/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1603268803160" />
+    <state width="821" height="212" key="GridCell.Tab.0.center" timestamp="1603519960311">
+      <screen x="-1920" y="23" width="1920" height="1057" />
+    </state>
+    <state width="821" height="212" key="GridCell.Tab.0.center/0.0.1440.849/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1603519351695" />
+    <state width="821" height="212" key="GridCell.Tab.0.center/0.23.1440.825/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1603519960311" />
+    <state width="1108" height="212" key="GridCell.Tab.0.center/0.23.1440.829/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1603268803158" />
+    <state width="821" height="212" key="GridCell.Tab.0.left" timestamp="1603519960310">
+      <screen x="-1920" y="23" width="1920" height="1057" />
+    </state>
+    <state width="821" height="212" key="GridCell.Tab.0.left/0.0.1440.849/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1603519351694" />
+    <state width="821" height="212" key="GridCell.Tab.0.left/0.23.1440.825/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1603519960310" />
+    <state width="1108" height="212" key="GridCell.Tab.0.left/0.23.1440.829/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1603268803158" />
+    <state width="821" height="212" key="GridCell.Tab.0.right" timestamp="1603519960312">
+      <screen x="-1920" y="23" width="1920" height="1057" />
+    </state>
+    <state width="821" height="212" key="GridCell.Tab.0.right/0.0.1440.849/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1603519351697" />
+    <state width="821" height="212" key="GridCell.Tab.0.right/0.23.1440.825/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1603519960312" />
+    <state width="1108" height="212" key="GridCell.Tab.0.right/0.23.1440.829/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1603268803159" />
+    <state x="-960" y="378" key="search.everywhere.popup" timestamp="1603221480307">
+      <screen x="-1920" y="23" width="1920" height="1057" />
+    </state>
+    <state x="-960" y="378" key="search.everywhere.popup/0.23.1440.830/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1603221480307" />
   </component>
 </project>
